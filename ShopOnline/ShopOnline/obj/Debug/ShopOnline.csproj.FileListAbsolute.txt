@@ -80,6 +80,8 @@ D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.pdb
 D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.Migrations.ShopOnlinev1.resources
 D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.GenerateResource.cache
 D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
+D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
+D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInputs.cache
 D:\BKAP\ShopOnline\ShopOnline\bin\ShopOnline.dll.config
 D:\BKAP\ShopOnline\ShopOnline\bin\ShopOnline.dll
 D:\BKAP\ShopOnline\ShopOnline\bin\ShopOnline.pdb
@@ -130,6 +132,7 @@ D:\BKAP\ShopOnline\ShopOnline\bin\roslyn\vbc.rsp
 D:\BKAP\ShopOnline\ShopOnline\bin\roslyn\VBCSCompiler.exe
 D:\BKAP\ShopOnline\ShopOnline\bin\roslyn\VBCSCompiler.exe.config
 D:\BKAP\ShopOnline\ShopOnline\bin\Antlr3.Runtime.dll
+D:\BKAP\ShopOnline\ShopOnline\bin\DATA.dll
 D:\BKAP\ShopOnline\ShopOnline\bin\EntityFramework.dll
 D:\BKAP\ShopOnline\ShopOnline\bin\EntityFramework.SqlServer.dll
 D:\BKAP\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -143,6 +146,8 @@ D:\BKAP\ShopOnline\ShopOnline\bin\System.Web.WebPages.Deployment.dll
 D:\BKAP\ShopOnline\ShopOnline\bin\System.Web.WebPages.dll
 D:\BKAP\ShopOnline\ShopOnline\bin\System.Web.WebPages.Razor.dll
 D:\BKAP\ShopOnline\ShopOnline\bin\WebGrease.dll
+D:\BKAP\ShopOnline\ShopOnline\bin\DATA.pdb
+D:\BKAP\ShopOnline\ShopOnline\bin\DATA.dll.config
 D:\BKAP\ShopOnline\ShopOnline\bin\EntityFramework.xml
 D:\BKAP\ShopOnline\ShopOnline\bin\EntityFramework.SqlServer.xml
 D:\BKAP\ShopOnline\ShopOnline\bin\System.Web.Helpers.xml
@@ -155,10 +160,6 @@ D:\BKAP\ShopOnline\ShopOnline\bin\System.Web.WebPages.Razor.xml
 D:\BKAP\ShopOnline\ShopOnline\bin\Newtonsoft.Json.xml
 D:\BKAP\ShopOnline\ShopOnline\bin\Antlr3.Runtime.pdb
 D:\BKAP\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
-D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.Migrations.ShopOnlinev1.resources
-D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.GenerateResource.cache
-D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInputs.cache
 D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CopyComplete
 D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.dll
 D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.pdb

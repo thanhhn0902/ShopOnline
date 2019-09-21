@@ -127,26 +127,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Administrator\AdministratorAreaRegistration.cs" />
+    <Compile Include="Areas\Administrator\Common\CommonConstants.cs" />
     <Compile Include="Areas\Administrator\Controllers\HomeController.cs" />
-    <Compile Include="Migrations\201909200646439_ShopOnline-v1.cs" />
-    <Compile Include="Migrations\201909200646439_ShopOnline-v1.Designer.cs">
-      <DependentUpon>201909200646439_ShopOnline-v1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Advertise.cs" />
-    <Compile Include="Models\Company.cs" />
-    <Compile Include="Models\Contact.cs" />
-    <Compile Include="Models\Customers.cs" />
-    <Compile Include="Models\Data\ShopDbContext.cs" />
-    <Compile Include="Models\GroupProduct.cs" />
-    <Compile Include="Models\Menu.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\OrderDetail.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\Province.cs" />
-    <Compile Include="Models\Shop.cs" />
-    <Compile Include="Models\Support.cs" />
-    <Compile Include="Models\Users.cs" />
+    <Compile Include="Areas\Administrator\Models\UserVm.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -198,6 +181,8 @@
     <Content Include="Areas\Administrator\Content\plugins\bootstrap\js\bootstrap.js" />
     <Content Include="Areas\Administrator\Content\plugins\bootstrap\js\bootstrap.min.js" />
     <Content Include="Areas\Administrator\Content\plugins\fastclick\fastclick.js" />
+    <Content Include="Areas\Administrator\Content\plugins\icheck-bootstrap\icheck-bootstrap.css" />
+    <Content Include="Areas\Administrator\Content\plugins\icheck-bootstrap\icheck-bootstrap.min.css" />
     <Content Include="Areas\Administrator\Content\plugins\jquery\core.js" />
     <Content Include="Areas\Administrator\Content\plugins\jquery\jquery.js" />
     <Content Include="Areas\Administrator\Content\plugins\jquery\jquery.min.js" />
@@ -227,9 +212,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Administrator\Models\" />
     <Folder Include="Content\" />
-    <Folder Include="Models\Vm\" />
+    <Folder Include="Models\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
@@ -250,12 +234,21 @@
     <Content Include="Areas\Administrator\Views\Home\Leftsidebar.cshtml" />
     <Content Include="Areas\Administrator\Views\Home\Topsidebar.cshtml" />
     <Content Include="Areas\Administrator\Views\Home\Bottomsidebar.cshtml" />
+    <Content Include="Areas\Administrator\Views\Home\Login.cshtml" />
+    <Content Include="Areas\Administrator\Content\plugins\icheck-bootstrap\LICENSE" />
+    <Content Include="Areas\Administrator\Content\plugins\icheck-bootstrap\package.json" />
+    <Content Include="Areas\Administrator\Content\plugins\icheck-bootstrap\README.md" />
+    <Content Include="Areas\Administrator\Views\Home\Register.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201909200646439_ShopOnline-v1.resx">
-      <DependentUpon>201909200646439_ShopOnline-v1.cs</DependentUpon>
-    </EmbeddedResource>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DATA\DATA.csproj">
+      <Project>{34ef67fc-0548-4e8e-b205-38ed1e2751c2}</Project>
+      <Name>DATA</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
