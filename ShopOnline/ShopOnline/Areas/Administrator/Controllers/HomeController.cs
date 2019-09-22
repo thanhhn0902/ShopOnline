@@ -1,8 +1,7 @@
 ﻿using System.Web.Mvc;
-using DATA.DAO;
 using ShopOnline.Areas.Administrator.Common;
+using ShopOnline.Areas.Administrator.DAO;
 using ShopOnline.Areas.Administrator.Models;
-
 namespace ShopOnline.Areas.Administrator.Controllers
 {
     public class HomeController : Controller
@@ -24,6 +23,12 @@ namespace ShopOnline.Areas.Administrator.Controllers
         {
             return PartialView();
         }
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
         public ActionResult Login(string username, string password)
         {
             if (ModelState.IsValid)
@@ -41,7 +46,9 @@ namespace ShopOnline.Areas.Administrator.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("","Tài khoản hoặc mật khẩu không đúng!!!");
+                    //ModelState.AddModelError("","Tài khoản hoặc mật khẩu không đúng!!!");
+                    ViewBag.ErrorMessage = "Tài khoản hoặc mật khẩu không đúng";
+                    return View("Login");
                 }
             }
             return View("Index");
