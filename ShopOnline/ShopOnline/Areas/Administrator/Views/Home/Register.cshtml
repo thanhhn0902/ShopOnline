@@ -1,4 +1,4 @@
-﻿
+﻿@model ShopOnline.Models.Users
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,30 +29,32 @@
             <div class="card-body register-card-body">
                 <p class="login-box-msg">Register a new membership</p>
 
-                <form action="#" method="post">
+                @using (Html.BeginForm("Register", "Home", FormMethod.Post))
+                {
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Full name">
+                        <input name="Name" type="text" class="form-control" placeholder="Full name">
                         <div class="input-group-append input-group-text">
                             <span class="fas fa-user"></span>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input name="UserName" type="text" class="form-control" placeholder="User Name">
                         <div class="input-group-append input-group-text">
                             <span class="fas fa-envelope"></span>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input class="pass" name="Password" type="password" class="form-control" placeholder="Password">
                         <div class="input-group-append input-group-text">
                             <span class="fas fa-lock"></span>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Retype password">
+                        <input class="repass" type="password" class="form-control" placeholder="Retype password">
                         <div class="input-group-append input-group-text">
                             <span class="fas fa-lock"></span>
                         </div>
+                        <span class="repassValidate"></span>
                     </div>
                     <div class="row">
                         <div class="col-8">
@@ -69,7 +71,7 @@
                         </div>
                         <!-- /.col -->
                     </div>
-                </form>
+                }
 
                 <div class="social-auth-links text-center">
                     <p>- OR -</p>

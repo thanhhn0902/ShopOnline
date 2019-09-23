@@ -128,16 +128,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Administrator\AdministratorAreaRegistration.cs" />
     <Compile Include="Areas\Administrator\Common\CommonConstants.cs" />
+    <Compile Include="Areas\Administrator\Common\Encryptor.cs" />
     <Compile Include="Areas\Administrator\Controllers\HomeController.cs" />
-    <Compile Include="Areas\Administrator\DAO\UserDAO.cs" />
-    <Compile Include="Areas\Administrator\Models\UserVm.cs" />
+    <Compile Include="DAO\UserDAO.cs" />
+    <Compile Include="Areas\Administrator\Common\UserSession.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201909221216052_ShopOnline-v1.cs" />
-    <Compile Include="Migrations\201909221216052_ShopOnline-v1.Designer.cs">
-      <DependentUpon>201909221216052_ShopOnline-v1.cs</DependentUpon>
+    <Compile Include="Migrations\201909230158051_ShopOnline-v1.cs" />
+    <Compile Include="Migrations\201909230158051_ShopOnline-v1.Designer.cs">
+      <DependentUpon>201909230158051_ShopOnline-v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Advertise.cs" />
@@ -226,6 +227,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Administrator\Models\" />
     <Folder Include="Content\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
@@ -264,8 +266,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201909221216052_ShopOnline-v1.resx">
-      <DependentUpon>201909221216052_ShopOnline-v1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201909230158051_ShopOnline-v1.resx">
+      <DependentUpon>201909230158051_ShopOnline-v1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

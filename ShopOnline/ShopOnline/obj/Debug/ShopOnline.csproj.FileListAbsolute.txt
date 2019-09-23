@@ -77,9 +77,6 @@ D:\Shop\ShopOnline\ShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlat
 D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CopyComplete
 D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.dll
 D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.pdb
-D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.Migrations.ShopOnlinev1.resources
-D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.GenerateResource.cache
-D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
 D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache
 D:\BKAP\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInputs.cache
 D:\BKAP\ShopOnline\ShopOnline\bin\ShopOnline.dll.config
@@ -244,3 +241,6 @@ D:\BANHANG\ShopOnline\ShopOnline\obj\Debug\ShopOnline.dll
 D:\BANHANG\ShopOnline\ShopOnline\obj\Debug\ShopOnline.pdb
 D:\BANHANG\ShopOnline\ShopOnline\obj\Debug\ShopOnline.Migrations.ShopOnlinev1.resources
 D:\BANHANG\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.GenerateResource.cache
+D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.Migrations.ShopOnlinev1.resources
+D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.GenerateResource.cache
+D:\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache

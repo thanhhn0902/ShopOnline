@@ -1,12 +1,13 @@
-﻿using ShopOnline.Models;
+﻿using ShopOnline.Areas.Administrator.Common;
+using ShopOnline.Models;
 using ShopOnline.Models.Data;
 using System.Linq;
 
-namespace ShopOnline.Areas.Administrator.DAO
+namespace ShopOnline.DAO
 {
     class UserDAO
     {
-        ShopDbContext db = null;
+        private ShopDbContext db = null;
         public UserDAO()
         {
             db = new ShopDbContext();
@@ -24,15 +25,12 @@ namespace ShopOnline.Areas.Administrator.DAO
         }
         public bool Login(string username, string password)
         {
-            var result = db.Users.Count(x => x.UserName == username && x.Password == password);
+            var pass = Encryptor.MD5Hash(password);
+            var result = db.Users.Count(x => x.UserName == username && x.Password == pass);
             if (result > 0)
-            {
                 return true;
-            }
             else
-            {
                 return false;
-            }
         }
     }
 }
