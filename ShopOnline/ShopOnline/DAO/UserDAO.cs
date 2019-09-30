@@ -1,6 +1,7 @@
 ﻿using ShopOnline.Areas.Administrator.Common;
 using ShopOnline.Models;
 using ShopOnline.Models.Data;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ShopOnline.DAO
@@ -31,6 +32,21 @@ namespace ShopOnline.DAO
                 return true;
             else
                 return false;
+        }
+        public IEnumerable<Users> GetAll()
+        {
+            return db.Users.ToList();
+        }
+        public bool Delete(long ?id)
+        {
+            var user = db.Users.SingleOrDefault(x=>x.Id == id);
+            if (user != null)
+            {
+                db.Users.Remove(user);
+                db.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }
