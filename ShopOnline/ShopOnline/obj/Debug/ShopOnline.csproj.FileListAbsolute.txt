@@ -407,3 +407,4 @@ D:\BANHANG\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CoreCompileInp
 D:\BANHANG\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csproj.CopyComplete
 D:\BANHANG\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.dll
 D:\BANHANG\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.pdb
+D:\BANHANG\Shop\ShopOnline\ShopOnline\obj\Debug\ShopOnline.csprojAssemblyReference.cache

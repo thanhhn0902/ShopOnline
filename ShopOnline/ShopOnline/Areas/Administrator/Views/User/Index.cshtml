@@ -15,7 +15,6 @@
             <tr>
                 <th>NAME</th>
                 <th>USER NAME</th>
-                <th>PASSWORD</th>
                 <th>RULE</th>
                 <th>STATUS</th>
                 <th>MANAGER</th>
@@ -27,7 +26,6 @@
                 <tr>
                     <td>@item.Name</td>
                     <td>@item.UserName</td>
-                    <td>@item.Password</td>
                     <td>@item.Rule</td>
                     <td>@item.Status</td>
                     <td><button class="btn btn-default" data-toggle="modal" data-target="#modal-default" id="btn-Delete"><a data-href="/Administrator/User/Delete/@item.Id">Delete</a></button></td>
@@ -38,7 +36,6 @@
             <tr>
                 <th>NAME</th>
                 <th>USER NAME</th>
-                <th>PASSWORD</th>
                 <th>RULE</th>
                 <th>STATUS</th>
                 <th>MANAGER</th>
@@ -48,34 +45,16 @@
 </div>
 
 <!-- /.card-body -->
-<div class="modal fade" id="modal-default">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Thông tin người dùng</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Bạn có muốn xóa người dùng này?</p>
-            </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" id="get-Dellink"><a>Delete</a></button>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
+
+<div class="modal fade" id="modal-default" data-url='@Url.Action("Delete","User")'></div>
 <!-- /.modal -->
+
 @section scripts{
     @*<script>
             $(document).ready(function () {
-                $('#btn-Delete > a').on('click', function (e) {
-                    var href = $(this).data('href');
+                $('#btn-Delete > a').click(function (e) {
                     $('#get-Dellink > a').removeAttr('href');
+                    var href = $(this).data('href');
                     $('#get-Dellink > a').attr('href', href);
                     e.preventDefault();
                 })
@@ -83,12 +62,13 @@
         </script>*@
     <script>
         $(document).ready(function () {
-            $('#btn-Delete > a').click(function (e) {
-                $('#get-Dellink > a').removeAttr('href');
-                var href = $(this).data('href');
-                $('#get-Dellink > a').attr('href', href);
-                e.preventDefault();
-            })
+            $('#btn-Delete').click(function (e) {
+                var url = $('#modal-default').data('url');
+                $.get(url, function (data) {
+                    $('#modal-default').html(data);
+                    $('#modal-default').modal('show');
+                });
+            });
         });
     </script>
 }

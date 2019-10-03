@@ -19,6 +19,11 @@ namespace ShopOnline.Areas.Administrator.Controllers
             }
             return View();
         }
+        public ActionResult Delete()
+        {
+            return View();
+        }
+        [HttpPost]
         public ActionResult Delete(long ?id)
         {
             if (ModelState.IsValid)

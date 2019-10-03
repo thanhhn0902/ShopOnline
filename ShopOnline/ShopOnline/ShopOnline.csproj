@@ -424,7 +424,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Administrator\Models\" />
-    <Folder Include="Areas\Administrator\Views\Demo\" />
     <Folder Include="Content\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
@@ -464,6 +463,7 @@
     <Content Include="Areas\Administrator\Content\plugins\datatables\extensions\TableTools\images\psd\printer.psd" />
     <Content Include="Areas\Administrator\Content\plugins\datatables\extensions\TableTools\Readme.md" />
     <Content Include="Areas\Administrator\Content\plugins\toastr\toastr.js.map" />
+    <Content Include="Areas\Administrator\Views\User\Delete.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
