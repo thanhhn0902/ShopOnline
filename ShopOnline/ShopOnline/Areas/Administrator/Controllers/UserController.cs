@@ -19,6 +19,14 @@ namespace ShopOnline.Areas.Administrator.Controllers
             }
             return View();
         }
-        
+        public ActionResult Delete(long ?id)
+        {
+            if (ModelState.IsValid)
+            {
+                var list = new UserDAO().Delete(id);
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }
